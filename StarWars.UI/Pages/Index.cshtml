@@ -1,0 +1,40 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="container">
+    <h1 class="my-4 text-center">Starships</h1>
+
+    <div class="row">
+        @foreach (var starship in Model.Starships)
+        {
+            <div class="col-md-6 col-lg-4">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">@starship.Name</h5>
+                        <p class="card-text">
+                            <strong>Model:</strong> @starship.Model<br />
+                            <strong>Manufacturer:</strong> @starship.Manufacturer<br />
+                            <strong>Cost in credits:</strong> @starship.CostInCredits<br />
+                            <strong>Length:</strong> @starship.Length<br />
+                            <strong>Crew:</strong> @starship.Crew<br />
+                            <strong>Passengers:</strong> @starship.Passengers<br />
+                            <strong>Cargo capacity:</strong> @starship.CargoCapacity<br />
+                            <strong>Hyperdrive rating:</strong> @starship.HyperdriveRating<br />
+                            <strong>Starship class:</strong> @starship.StarshipClass<br />
+                        </p>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+<!-- Pagination controls -->
+<nav aria-label="Starship pagination">
+    <ul class="pagination justify-content-center">
+        
+    </ul>
+</nav>

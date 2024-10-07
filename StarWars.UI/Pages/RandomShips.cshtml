@@ -1,0 +1,29 @@
+﻿@page
+@model StarWars.UI.Pages.RandomShipsModel
+@{
+}
+
+<div class="container">
+    <h1 class="my-4 text-center">Starships Details</h1>
+
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h5 class="card-title">@Model.Starships.Name</h5>
+                    <p class="card-text">
+                        <strong>Model:</strong> @Model.Starships.Model<br />
+                        <strong>Manufacturer:</strong> @Model.Starships.Manufacturer<br />
+                        <strong>Cost in credits:</strong> @Model.Starships.CostInCredits<br />
+                        <strong>Length:</strong> @Model.Starships.Length<br />
+                        <strong>Crew:</strong> @Model.Starships.Crew<br />
+                        <strong>Passengers:</strong> @Model.Starships.Passengers<br />
+                        <strong>Cargo capacity:</strong> @Model.Starships.CargoCapacity<br />
+                        <strong>Hyperdrive rating:</strong> @Model.Starships.HyperdriveRating<br />
+                        <strong>Starship class:</strong> @Model.Starships.StarshipClass<br />
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
